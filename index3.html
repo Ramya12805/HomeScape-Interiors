@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+  color: antiquewhite;
+ 
+}
+
+.right {
+  right: 0;
+  background-color: white;
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  margin-left:-100px;
+  margin-top: -150px;
+}
+.description1{
+font-family: 'Montserrat';
+  font-size: 20px;
+  color: black;
+  quotes: "“" "”";
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  &::before {
+    content: open-quote;
+    font-size: 4em;
+    color: black;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    font-family: Georgia, serif;
+    margin-top: 30px;
+ 
+  }
+  &::after {
+    content: close-quote;
+    font-size: 4em;
+    bottom: -10px;
+    right:80px;
+    position: absolute;
+    color: black;
+    font-family: Georgia, serif;
+  
+  }
+}
+.split{
+    display: inline;
+}
+</style>
+</head>
+<body>
+<div class="split">
+    <div class="split left">
+        <h1  style="color: green;text-align: center;">WELCOME TO </h1>
+        <h1 style="color: rgb(19, 26, 19);text-align: center;"><b>ROOMSCAPE INTERIORS</b> </h1><br><br>
+        
+        <div class="description1">
+            <p style="align-content:center; color: black;font-size: 18px;">RoomScape Interior is a full-service creative architecture and interior design Company.<br> It is based in Bangalore, India. Which offers services from concept to completion.<br> We are committed to design excellence, responsibility and sustainability & translate our client's imagination into reality.<br>
+              <br>
+             <p style="align-content:center; color: black;font-size: 18px;">We have developed a unique style of mixing old with new and
+                 delivered projects within the client's budget.<br> We create inspiring interiors that reflect and enrich our Client’s lifestyle or business. <br>We provide design services for both residential and commercial spaces also prefer a collaborative<br> approach to design that encourages our clients to develop and hone their own style and taste.</p>
+              <br><br><br>
+             
+          </div>
+    </div>
+    
+    
+    <div class="split right">
+      <div class="centered">
+        <img src="index photo.jpg" alt="Avatar man">
+      </div>
+    </div>
+</div>
+
+     
+</body>
+</html>
